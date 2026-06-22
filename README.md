@@ -37,7 +37,7 @@ Ecto.Changeset.change(user, is_admin: true) |> Repo.update!()
 ## Local Development
 ### Docker and Dev Containers (Recommended)
 * Clone the repository and open it in VS Code
-* Open the command palette (Ctrl+Shift+P) and select "Remote-Containers: Open Folder in Container"
+* Open the command palette (Ctrl+Shift+P) and select "Dev Containers: Open Folder in Container"
 * Wait for the container to build and start
 * Open VS Code's integrated terminal (which will be directly running inside the container)
 * Run `mix setup` to install and setup dependencies
