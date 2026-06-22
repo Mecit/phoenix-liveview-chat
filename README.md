@@ -1,6 +1,8 @@
 # A Fully-functional Chat Application with Phoenix Framework
 Unlike many other examples on the web, this project goes beyond the basics to provide a fully-functional chat application built with the Phoenix Framework, leveraging LiveView. It demonstrates real-time communication, user authentication, and a beautiful, responsive UI.
 
+![Chat Screen Preview](preview.jpeg)
+
 ## Features
 * Real-time chat (duh!)
 * Multiple chat rooms
