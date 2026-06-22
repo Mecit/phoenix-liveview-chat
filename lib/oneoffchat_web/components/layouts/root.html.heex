@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <meta
+      name="description"
+      content="Connect instantly in secure, real-time chat rooms. No tracking, no third-party scripts, and your private messages disappear when you leave."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://oneoffchat.com/" />
+    <meta property="og:title" content="Oneoffchat | Real-Time, Ephemeral Conversations" />
+    <meta
+      property="og:description"
+      content="Connect instantly in secure, real-time, old school chat rooms."
+    />
+    <meta property="og:image" content="https://oneoffchat.com/images/social-share.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Oneoffchat | Real-Time, Ephemeral Conversations" />
+    <meta
+      name="twitter:description"
+      content="Old school chat rooms with zero third-party tracking."
+    />
+    <meta name="twitter:image" content="https://oneoffchat.com/images/social-share.png" />
+    <.live_title default="OneOffChat" suffix=" - Free, Ephemeral Chat Rooms">
+      {assigns[:page_title]}
+    </.live_title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="OneOffChat" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=JetBrains+Mono:wght@400;600&family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    />
+    <link phx-track-static rel="stylesheet" href={~p"/assets/css/app.css"} />
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/js/app.js"}>
+    </script>
+  </head>
+  <body>
+    <.flash_group flash={@flash} />
+    {@inner_content}
+    <div class="grain"></div>
+  </body>
+</html>

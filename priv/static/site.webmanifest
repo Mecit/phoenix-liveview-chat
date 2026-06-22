@@ -1,0 +1,18 @@
+{
+  "name": "OneOffChat",
+  "short_name": "OneOffChat",
+  "icons": [
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#3B4252",
+  "background_color": "#2E3440",
+  "display": "standalone"
+}

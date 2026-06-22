@@ -1,0 +1,16 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      # Map your local code to the container
+      - .:/app
+      # Keep dependencies and build artifacts inside the container.
+      # This prevents Linux-compiled binaries from mixing with your macOS file system.
+      - /app/deps
+      - /app/_build
+    environment:
+      - MIX_ENV=dev
+    # The command to run when the container starts
+    command: sleep infinity

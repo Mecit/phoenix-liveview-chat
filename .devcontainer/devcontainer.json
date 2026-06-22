@@ -1,0 +1,29 @@
+{
+    "name": "Oneoffchat",
+    "dockerComposeFile": [
+        "../compose.yaml"
+    ],
+    "service": "web",
+    "workspaceFolder": "/app",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "elixirLS.mixEnv": "dev"
+            },
+            "extensions": [
+                "elixir-lsp.elixir-ls",
+                "phoenixframework.phoenix"
+            ]
+        }
+    },
+    "forwardPorts": [
+        4000
+    ],
+    "remoteUser": "root"
+}
