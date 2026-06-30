@@ -7,6 +7,7 @@ Unlike many other examples on the web, this project goes beyond the basics to pr
 * Real-time chat (duh!)
 * Multiple chat rooms
 * Online chatters presence tracking
+* User mentions and notifications
 * Direct messages with option to disable them for everyone or a specific user
 * Chatter typing indicator
 * Command parsing
